@@ -1,0 +1,21 @@
+﻿@page
+@model WebApplication1.Pages.DivisionModel
+@{
+}
+<form method="post">
+	<div class="container">
+		<div class="row">
+			<div class="col-2">Enter 1st number</div>
+			<div class="col-1"><input type="text" name="txt1"/></div>
+		</div>
+		<div class="row">
+			<div class="col-2">Enter 2nd number</div>
+			<div class="col-1"><input type="text" name="txt2"/></div>
+		</div>
+		<div class="row">
+			<div class="col-1"><input type="submit" name="submit" value="submit" />
+				@TempData["res"]
+			</div>
+			</div>
+	</div>
+</form>
